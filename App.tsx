@@ -208,7 +208,7 @@ const FuturisticGlobe: React.FC = () => {
         <motion.div
           animate={{ y: [0, -15, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -top-12 -right-12 md:-top-16 md:-right-20 px-4 md:px-5 py-2 md:py-2.5 bg-slate-900/90 backdrop-blur-xl border border-[#f37321]/30 rounded-full text-[9px] md:text-[11px] font-bold text-white shadow-lg shadow-orange-600/10 z-30"
+          className="absolute -top-12 -right-12 md:-top-16 md:-right-20 px-4 md:px-5 py-2 md:py-2.5 bg-slate-900/90 backdrop-blur-xl border border-[#f37321]/30 rounded-full text-[9px] md:text-[11px] font-bold text-white shadow-lg shadow-orange-600/10 z-10"
         >
           <span className="flex items-center space-x-2">
             <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-green-500 rounded-full animate-pulse" />
@@ -219,7 +219,7 @@ const FuturisticGlobe: React.FC = () => {
         <motion.div
           animate={{ y: [0, 15, 0] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          className="absolute -bottom-8 -left-12 md:-bottom-12 md:-left-16 px-4 md:px-5 py-2 md:py-2.5 bg-slate-900/90 backdrop-blur-xl border border-white/10 rounded-full text-[9px] md:text-[11px] font-bold text-orion-orange shadow-lg z-30"
+          className="absolute -bottom-8 -left-12 md:-bottom-12 md:-left-16 px-4 md:px-5 py-2 md:py-2.5 bg-slate-900/90 backdrop-blur-xl border border-white/10 rounded-full text-[9px] md:text-[11px] font-bold text-orion-orange shadow-lg z-10"
         >
           <span className="flex items-center space-x-2">
             <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-[#f37321] rounded-full animate-pulse" />
