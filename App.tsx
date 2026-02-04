@@ -26,7 +26,7 @@ import {
 const OrionLogo: React.FC<{ className?: string }> = ({ className = "w-12 h-12" }) => (
   <div className={`${className} flex items-center justify-center overflow-hidden`}>
     <img 
-      src="https://drive.google.com/uc?export=view&id=1AUucG8zL-2kG2z3bdXOzJgR_lg_OvC2F" 
+      src="/logo.png" 
       alt="Orion Bridge Co. Logo" 
       className="w-full h-full object-contain"
       onError={(e) => {
