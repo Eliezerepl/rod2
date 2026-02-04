@@ -261,10 +261,10 @@ const AnimatedCounter: React.FC<{ value: number; labelPt: string; labelEn: strin
   }, [value]);
 
   return (
-    <div className="text-center p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl shadow-xl transition-all hover:border-[#f37321]/30">
-      <div className="text-4xl font-bold text-white mb-2">{count}{suffix}</div>
-      <div className="text-sm font-semibold text-[#f37321] uppercase tracking-wider">{labelPt}</div>
-      <div className="text-xs text-slate-400 italic">{labelEn}</div>
+    <div className="text-center p-4 md:p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl shadow-xl transition-all hover:border-[#f37321]/30">
+      <div className="text-2xl md:text-4xl font-bold text-white mb-1 md:mb-2">{count}{suffix}</div>
+      <div className="text-xs md:text-sm font-semibold text-[#f37321] uppercase tracking-wider">{labelPt}</div>
+      <div className="text-[10px] md:text-xs text-slate-400 italic">{labelEn}</div>
     </div>
   );
 };
@@ -356,7 +356,7 @@ const Hero = () => {
   const y1 = useTransform(scrollYProgress, [0, 1], [0, 200]);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-24 md:pt-32 pb-12 md:pb-20 overflow-hidden">
       {/* Background layer */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <ParticleBackground />
@@ -365,7 +365,7 @@ const Hero = () => {
         <div className="absolute inset-0 opacity-[0.1]" style={{ backgroundImage: 'radial-gradient(circle, #f37321 0.5px, transparent 0.5px)', backgroundSize: '60px 60px' }} />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Text Content */}
           <div className="lg:w-1/2 text-center lg:text-left">
@@ -378,28 +378,28 @@ const Hero = () => {
                 <span className="w-2 h-2 bg-[#f37321] rounded-full animate-pulse" />
                 <span className="text-xs font-bold text-[#f37321] uppercase tracking-widest">Global Bridge Startup</span>
               </div>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white mb-4 md:mb-6">
                 Conectamos marcas <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f37321] to-orange-400">brasileiras</span> ao mercado global.
               </h1>
-              <p className="text-sm md:text-lg text-slate-400 italic mb-8 max-w-xl mx-auto lg:mx-0">
+              <p className="text-xs sm:text-sm md:text-lg text-slate-400 italic mb-4 md:mb-8 max-w-xl mx-auto lg:mx-0">
                 "We connect Brazilian brands to the global market with excellence and trust."
               </p>
-              <p className="text-slate-300 mb-10 text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="text-slate-300 mb-6 md:mb-10 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Da estratégia ao embarque: soluções completas de exportação e importação com rastreabilidade, sustentabilidade e valor agregado.
               </p>
 
 
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-8">
-                <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-[#f37321] text-white font-bold rounded-full hover:bg-orange-500 hover:scale-105 transition-all flex items-center justify-center group shadow-2xl shadow-orange-600/30 whitespace-nowrap">
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 md:gap-4 mt-6 md:mt-8">
+                <a href="#contact" className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-[#f37321] text-white text-sm md:text-base font-bold rounded-full hover:bg-orange-500 hover:scale-105 transition-all flex items-center justify-center group shadow-2xl shadow-orange-600/30 whitespace-nowrap">
                   Fale com um especialista
-                  <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
-                <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/20 hover:border-white/50 hover:scale-105 transition-all whitespace-nowrap">
+                <a href="#contact" className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white text-sm md:text-base font-bold rounded-full hover:bg-white/20 hover:border-white/50 hover:scale-105 transition-all whitespace-nowrap">
                   Solicitar diagnóstico
                 </a>
               </div>
 
-              <div className="mt-12 text-5xl md:text-6xl font-black text-slate-900 select-none tracking-tighter uppercase opacity-30">
+              <div className="mt-8 md:mt-12 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 select-none tracking-tighter uppercase opacity-20 md:opacity-30">
                 We are Brasil
               </div>
             </motion.div>
@@ -407,7 +407,7 @@ const Hero = () => {
 
           {/* Visual Content: 3D Globe - Larger Wrapper */}
           <motion.div
-            className="lg:w-1/2 relative flex justify-center lg:justify-end min-h-[300px] md:min-h-[600px]"
+            className="lg:w-1/2 relative flex justify-center lg:justify-end min-h-[250px] sm:min-h-[350px] md:min-h-[600px]"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
@@ -417,7 +417,7 @@ const Hero = () => {
         </div>
 
         {/* Counter Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 lg:gap-8 mt-12 md:mt-20">
           <AnimatedCounter value={25} labelPt="Países atendidos" labelEn="Countries served" suffix="+" />
           <AnimatedCounter value={150} labelPt="Marcas representadas" labelEn="Brands represented" suffix="+" />
           <AnimatedCounter value={500} labelPt="Projetos concluídos" labelEn="Projects completed" suffix="+" />
