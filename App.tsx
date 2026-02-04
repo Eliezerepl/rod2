@@ -405,9 +405,9 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          {/* Visual Content: 3D Globe - Larger Wrapper */}
+          {/* Visual Content: 3D Globe - Hidden on mobile */}
           <motion.div
-            className="lg:w-1/2 relative flex justify-center lg:justify-end min-h-[250px] sm:min-h-[350px] md:min-h-[600px]"
+            className="hidden lg:flex lg:w-1/2 relative justify-center lg:justify-end min-h-[600px]"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
