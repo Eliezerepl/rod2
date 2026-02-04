@@ -411,12 +411,13 @@ const Hero = () => {
                 Da estratégia ao embarque: soluções completas de exportação e importação com rastreabilidade, sustentabilidade e valor agregado.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="#contact" className="w-full sm:w-auto px-10 py-4 bg-[#f37321] text-white font-bold rounded-full hover:bg-orange-500 transition-all flex items-center justify-center group shadow-xl shadow-orange-600/20">
+
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-8">
+                <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-[#f37321] text-white font-bold rounded-full hover:bg-orange-500 hover:scale-105 transition-all flex items-center justify-center group shadow-2xl shadow-orange-600/30">
                   Fale com um especialista
                   <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
-                <a href="#contact" className="w-full sm:w-auto px-10 py-4 bg-transparent border border-white/20 text-white font-bold rounded-full hover:bg-white/5 transition-all">
+                <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/20 hover:border-white/50 hover:scale-105 transition-all">
                   Solicitar diagnóstico
                 </a>
               </div>
