@@ -413,11 +413,11 @@ const Hero = () => {
 
 
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-8">
-                <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-[#f37321] text-white font-bold rounded-full hover:bg-orange-500 hover:scale-105 transition-all flex items-center justify-center group shadow-2xl shadow-orange-600/30">
+                <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-[#f37321] text-white font-bold rounded-full hover:bg-orange-500 hover:scale-105 transition-all flex items-center justify-center group shadow-2xl shadow-orange-600/30 whitespace-nowrap">
                   Fale com um especialista
                   <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
-                <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/20 hover:border-white/50 hover:scale-105 transition-all">
+                <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/20 hover:border-white/50 hover:scale-105 transition-all whitespace-nowrap">
                   Solicitar diagnóstico
                 </a>
               </div>
