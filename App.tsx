@@ -331,7 +331,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-slate-950/80 backdrop-blur-xl py-4 shadow-2xl' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center space-x-3">
-          <OrionLogo className="w-14 h-14" />
+          <OrionLogo className="w-20 h-20" />
         </div>
 
         <div className="hidden lg:flex items-center space-x-8">
